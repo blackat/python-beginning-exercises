@@ -38,6 +38,8 @@ print_words() and print_top().
 """
 
 import sys
+from itertools import islice
+
 
 # +++your code here+++
 # Define print_words(filename) and print_top(filename) functions.
@@ -46,6 +48,32 @@ import sys
 # Then print_words() and print_top() can just call the utility function.
 
 ###
+
+def dict_words(filename):
+    map = {}
+    with open(filename, 'rt', encoding='utf-8') as f:
+        for line in f:
+            words = line.split()
+            for word in words:
+                if word not in map:
+                    map[word.lower()] = 1
+                else:
+                    map[word.lower()] += 1
+    return map
+
+def print_words(filename):
+
+    map = dict_words(filename)
+
+    for key in sorted(map):
+        print(key, map[key])
+
+def print_top(filename):
+    map = dict_words(filename)
+
+    l = sorted(map.items(), key=lambda item: item[1], reverse=True)
+    l20 = l[:20]
+    print(l20)
 
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
