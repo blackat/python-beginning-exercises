@@ -1,18 +1,20 @@
-# python-beginning-exercises
+# Python Beginning Exercises
 
-![PyPI version](https://img.shields.io/pypi/v/python-beginning-exercises.svg)
-[![Documentation Status](https://readthedocs.org/projects/python-beginning-exercises/badge/?version=latest)](https://python-beginning-exercises.readthedocs.io/en/latest/?version=latest)
+Solving Google for [Education Python](https://developers.google.com/edu/python?hl=en) exercises about: string, list, for loop etc.
 
-Python Boilerplate contains all the boilerplate you need to create a Python package.
+## About
 
-* PyPI package: https://pypi.org/project/python-beginning-exercises/
-* Free software: MIT License
-* Documentation: https://python-beginning-exercises.readthedocs.io.
+The project has been scaffolded using CookieCutter and run via `uv`.
 
-## Features
+## How to run
 
-* TODO
+```bash
+# Build the project
+$ uv build
 
-## Credits
+# List the run options
+$ uv run
 
-This package was created with [Cookiecutter](https://github.com/audreyfeldroy/cookiecutter) and the [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) project template.
+# Run the corresponding exercise, for instance:
+$ uv run goog-exercise-01
+```

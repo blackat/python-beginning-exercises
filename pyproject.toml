@@ -24,7 +24,7 @@ test = [
     "pytest",  # testing
     "ruff",  # linting
     "ty", # checking types
-    "ipdb"    
+    "ipdb"
 ]
 
 [project.urls]
@@ -34,6 +34,8 @@ homepage = "https://github.com/blackat/python_beginning_exercises"
 
 [project.scripts]
 python_beginning_exercises = "python_beginning_exercises.cli:app"
+goog-exercise-01 = "mypack.exercise_string_one:main"
+goog-exercise-02 = "mypack.exercise_string_two:main"
 
 [tool.ty]
 # All rules are enabled as "error" by default; no need to specify unless overriding.

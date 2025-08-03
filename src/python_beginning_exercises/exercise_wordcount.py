@@ -51,7 +51,7 @@ import sys
 # calls the print_words() and print_top() functions which you must define.
 def main():
   if len(sys.argv) != 3:
-    print('usage: ./wordcount.py {--count | --topcount} file')
+    print('usage: ./exercise_wordcount.py {--count | --topcount} file')
     sys.exit(1)
 
   option = sys.argv[1]
