@@ -16,5 +16,5 @@ $ uv build
 $ uv run
 
 # Run the corresponding exercise, for instance:
-$ uv run goog-exercise-01
+$ uv run goog-exercise-string-01
 ```
